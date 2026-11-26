@@ -1,0 +1,7 @@
+{
+  "devices": [
+    {"name": "firewall-lan", "ip": "192.168.1.1", "port": 443},
+    {"name": "access-point", "ip": "192.168.1.10", "port": 80},
+    {"name": "ai-host", "ip": "192.168.1.20", "port": 11434}
+  ]
+}

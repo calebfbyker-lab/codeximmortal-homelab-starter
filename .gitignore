@@ -1,0 +1,13 @@
+# local/real configuration and evidence - never commit
+devices.json
+*.local.json
+config.xml
+*.pcap
+*.log
+*.key
+*.pem
+.env
+.env.*
+__pycache__/
+*.pyc
+evidence/
