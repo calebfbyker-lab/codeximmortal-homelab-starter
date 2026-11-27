@@ -1,0 +1,17 @@
+{
+  "backups": [
+    {
+      "system": "file-server",
+      "last_success": "2026-11-26",
+      "last_restore_test": "2026-10-15",
+      "offsite": true,
+      "encrypted": true
+    },
+    {
+      "system": "accounting-laptop",
+      "last_success": "2026-11-01",
+      "offsite": false,
+      "encrypted": true
+    }
+  ]
+}

@@ -1,5 +1,8 @@
 # local/real configuration and evidence - never commit
 devices.json
+assets.json
+zones.json
+backups.json
 *.local.json
 config.xml
 *.pcap

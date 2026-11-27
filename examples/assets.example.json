@@ -1,0 +1,32 @@
+{
+  "assets": [
+    {
+      "name": "office-laptop-01",
+      "type": "laptop",
+      "owner": "Example Person",
+      "zone": "staff",
+      "os": "Windows 11",
+      "last_patched": "2026-11-10",
+      "disk_encrypted": true,
+      "criticality": "medium"
+    },
+    {
+      "name": "file-server",
+      "type": "server",
+      "owner": "IT lead",
+      "zone": "servers",
+      "os": "Ubuntu 24.04",
+      "last_patched": "2026-11-20",
+      "end_of_life": "2029-04-30",
+      "criticality": "high"
+    },
+    {
+      "name": "lobby-camera",
+      "type": "iot",
+      "owner": "Office manager",
+      "zone": "iot",
+      "last_patched": "2026-06-01",
+      "criticality": "low"
+    }
+  ]
+}

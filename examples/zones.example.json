@@ -1,0 +1,59 @@
+{
+  "default_policy": "deny",
+  "zones": [
+    {
+      "name": "management",
+      "vlan": 10,
+      "subnet": "10.10.10.0/24",
+      "purpose": "Firewall, switch and access point admin"
+    },
+    {
+      "name": "staff",
+      "vlan": 20,
+      "subnet": "10.10.20.0/24",
+      "purpose": "Staff computers and phones"
+    },
+    {
+      "name": "servers",
+      "vlan": 30,
+      "subnet": "10.10.30.0/24",
+      "purpose": "File server, printers server, NAS"
+    },
+    {
+      "name": "iot",
+      "vlan": 40,
+      "subnet": "10.10.40.0/24",
+      "purpose": "Cameras, printers, smart devices"
+    },
+    {
+      "name": "guest",
+      "vlan": 50,
+      "subnet": "10.10.50.0/24",
+      "purpose": "Visitor Wi-Fi, internet only"
+    }
+  ],
+  "rules": [
+    {
+      "from": "staff",
+      "to": "servers",
+      "action": "allow",
+      "reason": "Staff use the file server"
+    },
+    {
+      "from": "management",
+      "to": "staff",
+      "action": "allow",
+      "reason": "Admin access to staff devices"
+    },
+    {
+      "from": "guest",
+      "to": "staff",
+      "action": "deny"
+    },
+    {
+      "from": "iot",
+      "to": "staff",
+      "action": "deny"
+    }
+  ]
+}
