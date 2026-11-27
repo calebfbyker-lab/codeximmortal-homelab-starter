@@ -11,3 +11,6 @@ config.xml
 __pycache__/
 *.pyc
 evidence/
+state.json
+agent_journal.jsonl
+report.md
